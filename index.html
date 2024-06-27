@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+<body>
+    <h1>javascript MAP FILTER AND REDUCE METHOD CLASS</h1>
+
+    <input type="number" name="age" id="checkage" value placeholder="PLEASE ENTER THE AGE">
+    <button id="chk_btn" onclick="display()">Go</button>
+
+    <div id="disp"></div>
+
+    <script src="./script.js"></script>
+    <script>
+        // filter method example
+        const age = [12, 15 , 78, 56,89];
+        function check(ages){
+           return ages > document.getElementById("checkage").value;
+        }
+
+        function display(){
+            document.getElementById("disp").innerHTML = "Age: " + age.filter(check);
+        }
+
+        
+    </script>
+</body>
+</html>
